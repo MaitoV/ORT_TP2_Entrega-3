@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar nuevo libro</title>
+</head>
+<body>
+    <h1>Registrar nuevo libro</h1>
+    <form action="/api/libros" method="POST">
+        <label for="title">Ingresa el titulo del libro: </label> 
+        <input id="title" name="titulo" type="text" required > <br> <br>
+        <label for="author">Ingrese el autor del libro:</label> 
+        <input id="author" name="autor" type="text" required> <br> <br>
+        <label for="year">Ingrese el año de publicación</label> 
+        <input id="year" name="anio" type="number" min="1454" max="2100"> <br> <br>
+        <input type="submit" value="REGISTRAR LIBRO">
+    </form>
+</body>
+</html>
